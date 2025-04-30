@@ -23,7 +23,7 @@ export const Navbar = () => {
             <div className="w-8 h-8 rounded-full bg-cyber-gradient flex items-center justify-center">
               <div className="w-5 h-5 bg-cyber-dark rounded-full" />
             </div>
-            <span className="text-xl font-bold text-gradient">CyberGuardian</span>
+            <span className="text-xl font-bold text-gradient">SAS.AI</span>
           </a>
         </div>
 

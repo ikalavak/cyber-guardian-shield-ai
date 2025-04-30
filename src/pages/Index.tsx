@@ -81,7 +81,7 @@ const Index = () => {
 
   const testimonials = [
     {
-      quote: "CyberGuardian detected and neutralized an attack that our previous security system completely missed. It's like having an elite security team working 24/7.",
+      quote: "SAS.AI detected and neutralized an attack that our previous security system completely missed. It's like having an elite security team working 24/7.",
       author: "Sarah Johnson",
       role: "CISO",
       company: "Global Finance Bank"
@@ -159,7 +159,7 @@ const Index = () => {
       <section id="how-it-works" className="py-20 bg-cyber-gray-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">How <span className="text-gradient">CyberGuardian</span> Works</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">How <span className="text-gradient">SAS.AI</span> Works</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Our AI security system operates through a sophisticated process to ensure maximum protection for your banking infrastructure.
             </p>
@@ -184,7 +184,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-cyber-radial"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Choose <span className="text-gradient">CyberGuardian</span></h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Choose <span className="text-gradient">SAS.AI</span></h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Financial institutions around the world trust our AI security system to protect their most valuable assets.
             </p>
@@ -206,7 +206,7 @@ const Index = () => {
             <div className="bg-cyber-gray-dark rounded-xl p-8 sm:p-12 flex flex-col items-center text-center">
               <h3 className="text-2xl sm:text-3xl font-bold mb-4">Ready to secure your banking infrastructure?</h3>
               <p className="text-gray-300 mb-8 max-w-2xl">
-                Join leading financial institutions that have already strengthened their security posture with CyberGuardian Shield AI.
+                Join leading financial institutions that have already strengthened their security posture with SAS.AI Shield AI.
               </p>
               <Button size="lg" className="bg-white text-cyber-blue hover:bg-gray-100">
                 Schedule a Free Security Assessment
@@ -222,7 +222,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Contact <span className="text-gradient">Us</span></h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Have questions about how CyberGuardian can protect your banking infrastructure? Get in touch with our security experts.
+              Have questions about how SAS.AI can protect your banking infrastructure? Get in touch with our security experts.
             </p>
           </div>
           
@@ -281,7 +281,7 @@ const Index = () => {
                 <div className="w-8 h-8 rounded-full bg-cyber-gradient flex items-center justify-center">
                   <div className="w-5 h-5 bg-cyber-dark rounded-full" />
                 </div>
-                <span className="text-xl font-bold text-gradient">CyberGuardian</span>
+                <span className="text-xl font-bold text-gradient">SAS.AI</span>
               </div>
               <p className="text-gray-400 mb-4">
                 Next-generation AI security for banking infrastructure.
@@ -332,7 +332,7 @@ const Index = () => {
           
           <div className="border-t border-cyber-indigo/10 pt-8 flex flex-col sm:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 sm:mb-0">
-              &copy; {new Date().getFullYear()} CyberGuardian Shield AI. All rights reserved.
+              &copy; {new Date().getFullYear()} SAS.AI Shield AI. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
