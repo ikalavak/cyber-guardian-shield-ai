@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				cyber: {
+					'blue': '#0A84FF',
+					'indigo': '#4F46E5',
+					'purple': '#9061F9',
+					'pink': '#E11D48',
+					'dark': '#111827',
+					'gray-dark': '#1F2937',
+					'gray': '#374151'
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,50 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						opacity: '1',
+						filter: 'brightness(1)'
+					},
+					'50%': { 
+						opacity: '0.8',
+						filter: 'brightness(1.2)'
+					}
+				},
+				'float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px)' 
+					},
+					'50%': { 
+						transform: 'translateY(-10px)'
+					}
+				},
+				'rotate-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
+				},
+				'shield-pulse': {
+					'0%, 100%': { 
+						boxShadow: '0 0 15px 5px rgba(10, 132, 255, 0.5)'
+					},
+					'50%': { 
+						boxShadow: '0 0 25px 10px rgba(144, 97, 249, 0.7)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 3s infinite ease-in-out',
+				'float': 'float 6s infinite ease-in-out',
+				'rotate-slow': 'rotate-slow 12s linear infinite',
+				'shield-pulse': 'shield-pulse 4s infinite ease-in-out',
+			},
+			backgroundImage: {
+				'cyber-gradient': 'linear-gradient(90deg, #0A84FF 0%, #9061F9 100%)',
+				'cyber-radial': 'radial-gradient(circle, rgba(144, 97, 249, 0.2) 0%, rgba(10, 132, 255, 0.1) 100%)',
+				'circuit-pattern': "url('/circuit-pattern.svg')"
 			}
 		}
 	},
