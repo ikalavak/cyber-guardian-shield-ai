@@ -40,8 +40,8 @@ const Index = () => {
     },
     {
       icon: Lock,
-      title: "Banking-Grade Security",
-      description: "Specifically designed to protect financial institutions and their customers."
+      title: "Enterprise-Grade Security",
+      description: "Specifically designed to protect organizations and their valuable digital assets."
     }
   ];
 
@@ -84,19 +84,19 @@ const Index = () => {
       quote: "SAS.AI detected and neutralized an attack that our previous security system completely missed. It's like having an elite security team working 24/7.",
       author: "Sarah Johnson",
       role: "CISO",
-      company: "Global Finance Bank"
+      company: "Global Enterprise"
     },
     {
       quote: "The self-healing capabilities have reduced our incident response time by 80%. Our team can now focus on strategic improvements instead of fighting fires.",
       author: "Michael Chen",
       role: "Head of IT Security",
-      company: "Secure Trust Banking"
+      company: "Secure Trust Solutions"
     },
     {
-      quote: "Implementation was seamless and the ROI was immediately apparent. Our customers feel safer knowing we use cutting-edge AI to protect their assets.",
+      quote: "Implementation was seamless and the ROI was immediately apparent. Our customers feel safer knowing we use cutting-edge AI to protect their data.",
       author: "Elena Rodriguez",
       role: "CEO",
-      company: "Digital Banking Solutions"
+      company: "Digital Solutions"
     }
   ];
 
@@ -111,10 +111,10 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-12 md:mb-0">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="text-gradient">AI-Powered</span> Bank Security Shield
+                <span className="text-gradient">AI-Powered</span> Security Shield
               </h1>
               <p className="text-xl text-gray-300 mb-8">
-                Proactively protect your banking systems from cyber threats with our advanced AI that detects, shields, and heals vulnerabilities before hackers can exploit them.
+                Proactively protect your systems from cyber threats with our advanced AI that detects, shields, and heals vulnerabilities before hackers can exploit them.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-cyber-gradient hover:opacity-90">
@@ -139,7 +139,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Advanced Protection <span className="text-gradient">Features</span></h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Our cutting-edge AI security system offers comprehensive protection designed specifically for banking infrastructure.
+              Our cutting-edge AI security system offers comprehensive protection designed for all types of digital infrastructure.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -161,7 +161,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">How <span className="text-gradient">SAS.AI</span> Works</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Our AI security system operates through a sophisticated process to ensure maximum protection for your banking infrastructure.
+              Our AI security system operates through a sophisticated process to ensure maximum protection for your digital infrastructure.
             </p>
           </div>
           <div className="max-w-3xl mx-auto">
@@ -186,7 +186,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Choose <span className="text-gradient">SAS.AI</span></h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Financial institutions around the world trust our AI security system to protect their most valuable assets.
+              Organizations around the world trust our AI security system to protect their most valuable digital assets.
             </p>
           </div>
           
@@ -204,9 +204,9 @@ const Index = () => {
           
           <div className="mt-20 bg-cyber-gradient p-0.5 rounded-xl">
             <div className="bg-cyber-gray-dark rounded-xl p-8 sm:p-12 flex flex-col items-center text-center">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Ready to secure your banking infrastructure?</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4">Ready to secure your digital infrastructure?</h3>
               <p className="text-gray-300 mb-8 max-w-2xl">
-                Join leading financial institutions that have already strengthened their security posture with SAS.AI Shield AI.
+                Join leading organizations that have already strengthened their security posture with SAS.AI Shield.
               </p>
               <Button size="lg" className="bg-white text-cyber-blue hover:bg-gray-100">
                 Schedule a Free Security Assessment
@@ -222,7 +222,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Contact <span className="text-gradient">Us</span></h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Have questions about how SAS.AI can protect your banking infrastructure? Get in touch with our security experts.
+              Have questions about how SAS.AI can protect your digital infrastructure? Get in touch with our security experts.
             </p>
           </div>
           
@@ -284,7 +284,7 @@ const Index = () => {
                 <span className="text-xl font-bold text-gradient">SAS.AI</span>
               </div>
               <p className="text-gray-400 mb-4">
-                Next-generation AI security for banking infrastructure.
+                Next-generation AI security for digital infrastructure.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -332,7 +332,7 @@ const Index = () => {
           
           <div className="border-t border-cyber-indigo/10 pt-8 flex flex-col sm:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 sm:mb-0">
-              &copy; {new Date().getFullYear()} SAS.AI Shield AI. All rights reserved.
+              &copy; {new Date().getFullYear()} SAS.AI Security Shield. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
