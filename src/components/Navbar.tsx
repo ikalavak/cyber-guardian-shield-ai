@@ -19,7 +19,7 @@ export const Navbar = () => {
     <header className="fixed w-full top-0 z-50 bg-cyber-dark/80 backdrop-blur-md border-b border-cyber-indigo/10">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
-          <a href="#" className="flex items-center space-x-2">
+          <a href="#" className="flex items-center space-x-1">
             <img 
               src="/lovable-uploads/843acba6-cf27-4c4b-bb9d-4beb375115e7.png" 
               alt="SAS.AI Logo" 
