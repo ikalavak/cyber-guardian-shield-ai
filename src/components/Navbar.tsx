@@ -25,7 +25,7 @@ export const Navbar = () => {
               alt="SAS.AI Logo" 
               className="w-8 h-8 brightness-0 invert" 
             />
-            <span className="text-xl font-bold text-gradient">SAS.AI</span>
+            <span className="text-xl font-bold text-white">SAS.AI</span>
           </a>
         </div>
 
