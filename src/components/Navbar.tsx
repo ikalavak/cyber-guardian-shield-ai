@@ -23,7 +23,7 @@ export const Navbar = () => {
             <img 
               src="/lovable-uploads/843acba6-cf27-4c4b-bb9d-4beb375115e7.png" 
               alt="SAS.AI Logo" 
-              className="w-8 h-8" 
+              className="w-8 h-8 brightness-0 invert" 
             />
             <span className="text-xl font-bold text-gradient">SAS.AI</span>
           </a>
