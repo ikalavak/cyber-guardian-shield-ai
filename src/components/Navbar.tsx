@@ -20,9 +20,11 @@ export const Navbar = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
           <a href="#" className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-cyber-gradient flex items-center justify-center">
-              <div className="w-5 h-5 bg-cyber-dark rounded-full" />
-            </div>
+            <img 
+              src="/lovable-uploads/843acba6-cf27-4c4b-bb9d-4beb375115e7.png" 
+              alt="SAS.AI Logo" 
+              className="w-8 h-8" 
+            />
             <span className="text-xl font-bold text-gradient">SAS.AI</span>
           </a>
         </div>
