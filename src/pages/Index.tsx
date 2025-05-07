@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ShieldAnimation } from "@/components/ShieldAnimation";
 import { Navbar } from "@/components/Navbar";
@@ -278,10 +277,12 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-8 h-8 rounded-full bg-cyber-gradient flex items-center justify-center">
-                  <div className="w-5 h-5 bg-cyber-dark rounded-full" />
-                </div>
-                <span className="text-xl font-bold text-gradient">SAS.AI</span>
+                <img 
+                  src="/lovable-uploads/843acba6-cf27-4c4b-bb9d-4beb375115e7.png" 
+                  alt="SAS.AI Logo" 
+                  className="w-8 h-8 brightness-0 invert" 
+                />
+                <span className="text-xl font-bold text-white font-sans">SAS.AI</span>
               </div>
               <p className="text-gray-400 mb-4">
                 Next-generation AI security for digital infrastructure.
