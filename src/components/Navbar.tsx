@@ -22,10 +22,10 @@ export const Navbar = () => {
           <a href="#" className="flex items-center space-x-1">
             <img 
               src="/lovable-uploads/843acba6-cf27-4c4b-bb9d-4beb375115e7.png" 
-              alt="SAS.AI Logo" 
+              alt="SAS Logo" 
               className="w-8 h-8 brightness-0 invert" 
             />
-            <span className="text-xl font-bold text-white font-sans">SAS.AI</span>
+            <span className="text-xl font-bold text-white font-sans">SAS</span>
           </a>
         </div>
 

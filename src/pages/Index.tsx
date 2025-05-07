@@ -158,7 +158,7 @@ const Index = () => {
       <section id="how-it-works" className="py-20 bg-cyber-gray-dark">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">How <span className="text-gradient">SAS.AI</span> Works</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">How <span className="text-gradient">SAS</span> Works</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Our AI security system operates through a sophisticated process to ensure maximum protection for your digital infrastructure.
             </p>
@@ -183,7 +183,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-cyber-radial"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Choose <span className="text-gradient">SAS.AI</span></h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Why Choose <span className="text-gradient">SAS</span></h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Organizations around the world trust our AI security system to protect their most valuable digital assets.
             </p>
@@ -279,10 +279,10 @@ const Index = () => {
               <div className="flex items-center space-x-2 mb-6">
                 <img 
                   src="/lovable-uploads/843acba6-cf27-4c4b-bb9d-4beb375115e7.png" 
-                  alt="SAS.AI Logo" 
+                  alt="SAS Logo" 
                   className="w-8 h-8 brightness-0 invert" 
                 />
-                <span className="text-xl font-bold text-white font-sans">SAS.AI</span>
+                <span className="text-xl font-bold text-white font-sans">SAS</span>
               </div>
               <p className="text-gray-400 mb-4">
                 Next-generation AI security for digital infrastructure.
@@ -333,7 +333,7 @@ const Index = () => {
           
           <div className="border-t border-cyber-indigo/10 pt-8 flex flex-col sm:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 sm:mb-0">
-              &copy; {new Date().getFullYear()} SAS.AI Security Shield. All rights reserved.
+              &copy; {new Date().getFullYear()} SAS Security Shield. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
