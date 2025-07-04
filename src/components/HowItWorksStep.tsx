@@ -2,6 +2,7 @@
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTheme } from '@/contexts/ThemeContext';
 
 interface HowItWorksStepProps {
   icon: LucideIcon;
@@ -18,6 +19,8 @@ export const HowItWorksStep = ({
   step,
   isLast = false 
 }: HowItWorksStepProps) => {
+  const { theme } = useTheme();
+  
   return (
     <div className="flex">
       <div className="flex flex-col items-center mr-6">
@@ -29,11 +32,22 @@ export const HowItWorksStep = ({
         )}
       </div>
       <div className={cn("pb-12", isLast && "pb-0")}>
-        <div className="bg-cyber-blue/10 rounded-md px-3 py-1 inline-block mb-2">
-          <span className="text-xs font-semibold text-cyber-blue">Step {step}</span>
+        <div className={cn(
+          "rounded-md px-3 py-1 inline-block mb-2",
+          theme === 'light' ? "bg-blue-100" : "bg-cyber-blue/10"
+        )}>
+          <span className={cn(
+            "text-xs font-semibold",
+            theme === 'light' ? "text-blue-700" : "text-cyber-blue"
+          )}>Step {step}</span>
         </div>
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-400">{description}</p>
+        <h3 className={cn(
+          "text-xl font-bold mb-2",
+          theme === 'light' ? "text-gray-900" : "text-white"
+        )}>{title}</h3>
+        <p className={cn(
+          theme === 'light' ? "text-gray-600" : "text-gray-400"
+        )}>{description}</p>
       </div>
     </div>
   );
