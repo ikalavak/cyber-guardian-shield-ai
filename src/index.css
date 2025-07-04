@@ -44,6 +44,36 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+  }
 }
 
 @layer base {
@@ -52,8 +82,16 @@
   }
 
   body {
-    @apply bg-cyber-dark text-foreground;
+    @apply bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
     background-image: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.03) 0%, rgba(10, 132, 255, 0.01) 100%);
+  }
+
+  .light body {
+    background-image: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.02) 0%, rgba(10, 132, 255, 0.005) 100%);
   }
 }
 
@@ -66,9 +104,12 @@
 }
 
 .cyber-card {
-  background: rgba(31, 41, 55, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(79, 70, 229, 0.1);
+  @apply bg-card/70 backdrop-blur-sm border border-border/20;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.light .cyber-card {
+  @apply bg-white/80 border-gray-200/50;
 }
 
 .cybergrid {
@@ -76,4 +117,10 @@
   background-image: 
     linear-gradient(to right, rgba(79, 70, 229, 0.1) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(79, 70, 229, 0.1) 1px, transparent 1px);
+}
+
+.light .cybergrid {
+  background-image: 
+    linear-gradient(to right, rgba(79, 70, 229, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(79, 70, 229, 0.05) 1px, transparent 1px);
 }
