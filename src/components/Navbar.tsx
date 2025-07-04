@@ -16,7 +16,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-cyber-dark/80 backdrop-blur-md border-b border-cyber-indigo/10">
+    <header className="fixed w-full top-0 z-50 bg-cyber-dark/90 backdrop-blur-md border-b border-cyber-indigo/10">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
           <a href="#" className="flex items-center space-x-1">
@@ -47,7 +47,8 @@ export const Navbar = () => {
         <div className="md:hidden">
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-            className="text-gray-300 hover:text-white"
+            className="text-gray-300 hover:text-white p-2 rounded-md"
+            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -56,23 +57,40 @@ export const Navbar = () => {
 
       {/* Mobile Navigation */}
       <div className={cn(
-        "fixed inset-0 top-16 bg-cyber-dark/95 backdrop-blur-md transition-all duration-300 ease-in-out z-40 md:hidden",
+        "fixed inset-0 top-16 bg-cyber-dark backdrop-blur-sm transition-all duration-300 ease-in-out z-40 md:hidden",
         mobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
-        <div className="container mx-auto px-4 py-6 space-y-8">
-          {navItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="block py-3 text-lg font-medium text-gray-300 hover:text-white border-b border-cyber-gray-dark"
-            >
-              {item.name}
-            </a>
-          ))}
-          <Button className="w-full mt-6 bg-cyber-gradient hover:opacity-90">Request Demo</Button>
+        <div className="bg-cyber-dark border-t border-cyber-indigo/20 min-h-screen">
+          <div className="container mx-auto px-4 py-6 space-y-2">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block py-4 px-4 text-lg font-medium text-gray-300 hover:text-white hover:bg-cyber-gray-dark/30 rounded-lg border-b border-cyber-gray-dark/20 transition-colors"
+              >
+                {item.name}
+              </a>
+            ))}
+            <div className="pt-4">
+              <Button 
+                className="w-full bg-cyber-gradient hover:opacity-90 py-3 text-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Request Demo
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-30 md:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
     </header>
   );
 };
